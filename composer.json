@@ -2,14 +2,14 @@
     "name": "devop-core/framework",
     "description": "DevOp Framework",
     "keywords": ["php", "devop", "framework"],
-    "homepage": "https://devop-studio.com",
+    "homepage": "https://www.devop.studio",
     "type": "library",
     "license": "MIT",
     "authors": [
         {
             "name": "DevOp Studio",
-            "email": "core@devop-studio.com",
-            "homepage": "https://devop-studio.com"
+            "email": "core@www.devop.studio",
+            "homepage": "https://www.devop.studio"
         },
         {
             "name": "Zlatin Hristov",
@@ -20,23 +20,19 @@
     ],
     "minimum-stability": "dev",
     "require": {
-        "php": ">=5.4",
-        "devop-core/http": "^1.0",
-        "devop-core/config": "^1.0",
-        "devop-core/router": "^1.0",
-        "devop-core/container": "^1.0"
+        "php": ">=5.4"
     },
     "require-dev": {
         "phpunit/phpunit": "^4.8"
     },
     "autoload": {
         "psr-4": {
-            "DevOp\\Core\\Framework\\": "src"
+            "DevOp\\Core\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "DevOp\\Core\\Framework\\Test\\": "tests"
+            "DevOp\\Core\\Test\\": "tests"
         }
     }
 }

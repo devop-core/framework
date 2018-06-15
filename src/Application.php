@@ -1,7 +1,6 @@
 <?php
-namespace DevOp\Core\Framework;
+namespace DevOp\Core;
 
-use DevOp\Core\Config;
 use DevOp\Core\Container;
 
 class Application
@@ -16,7 +15,7 @@ class Application
      * @var Container
      */
     private $container;
-    
+
     /**
      * @return self
      */
@@ -31,16 +30,24 @@ class Application
     public function configure()
     {
         $this->container = new Container();
-        
-        $this->container->add(Controller::class, function(){
+
+        $this->container->add('debug', env('APP_DEBUG'));
+
+        $this->container->add(Controller::class, function() {
             return new Controller($this->container);
         });
-        
+
         return $this;
     }
 
-    public function run()
+    public function process()
     {
-        
+
+        return $this;
+    }
+
+    public function end()
+    {
+        return $this;
     }
 }

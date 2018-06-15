@@ -11,6 +11,9 @@ class Controller
      */
     private $container;
 
+    /**
+     * @param ContainerInterface $container
+     */
     public function __construct(ContainerInterface $container)
     {
         $this->container = $container;
@@ -18,16 +21,11 @@ class Controller
 
     /**
      * @param $name
-     * @param null $default
+     * @param mixed $default
      * @return mixed
      */
     public function getParamater($name, $default = null)
     {
         return $this->container->get($name, $default);
-    }
-
-    public function getEntityManager()
-    {
-
     }
 }
