@@ -1,11 +1,11 @@
 <?php
-namespace DevOp\Core;
+namespace DevOp\Core\Framework;
 
 use DevOp\Core\Container;
+use DevOp\Core\Framework\Controller;
 
 class Application
 {
-
     /**
      * @var self
      */
@@ -33,7 +33,8 @@ class Application
 
         $this->container->add('debug', env('APP_DEBUG'));
 
-        $this->container->add(Controller::class, function() {
+        $this->container->add(Controller::class,
+            function() {
             return new Controller($this->container);
         });
 

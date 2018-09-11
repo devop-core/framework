@@ -8,31 +8,34 @@
     "authors": [
         {
             "name": "DevOp Studio",
-            "email": "core@www.devop.studio",
+            "email": "core@devop.studio",
             "homepage": "https://www.devop.studio"
         },
         {
             "name": "Zlatin Hristov",
             "email": "about@z-latko.info",
-            "homepage": "https://z-latko.info",
+            "homepage": "https://www.z-latko.info",
             "role": "Developer"
         }
     ],
     "minimum-stability": "dev",
     "require": {
-        "php": ">=5.4"
+        "php": ">=5.4",
+        "devop-core/config": "~1.0",
+        "devop-core/dotenv": "~1.0",
+        "devop-core/container": "~1.0"
     },
     "require-dev": {
         "phpunit/phpunit": "^4.8"
     },
     "autoload": {
         "psr-4": {
-            "DevOp\\Core\\": "src"
+            "DevOp\\Core\\Framework\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "DevOp\\Core\\Test\\": "tests"
+            "DevOp\\Core\\Framework\\Test\\": "tests"
         }
     }
 }

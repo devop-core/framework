@@ -1,11 +1,224 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "abf41d1714ddf547b8252736a809ed16",
-    "packages": [],
+    "content-hash": "f145fd39683e1f07f9078f92c119331a",
+    "packages": [
+        {
+            "name": "devop-core/config",
+            "version": "1.1.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/devop-core/config.git",
+                "reference": "4e423baf424ace6670192c4643ace40d320ef87f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/devop-core/config/zipball/4e423baf424ace6670192c4643ace40d320ef87f",
+                "reference": "4e423baf424ace6670192c4643ace40d320ef87f",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.8"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "DevOp\\Core\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Zlatin Hristov",
+                    "email": "about@z-latko.info",
+                    "homepage": "https://z-latko.info",
+                    "role": "Developer"
+                },
+                {
+                    "name": "DevOp Studio",
+                    "email": "core@devop.studio",
+                    "homepage": "https://www.devop.studio"
+                }
+            ],
+            "description": "Config service manager",
+            "homepage": "https://www.devop.studio",
+            "keywords": [
+                "config",
+                "configuration",
+                "management",
+                "php"
+            ],
+            "time": "2018-07-31T19:17:29+00:00"
+        },
+        {
+            "name": "devop-core/container",
+            "version": "1.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/devop-core/container.git",
+                "reference": "6d2d70de8910a4c5b1f87505775c385d8fb71512"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/devop-core/container/zipball/6d2d70de8910a4c5b1f87505775c385d8fb71512",
+                "reference": "6d2d70de8910a4c5b1f87505775c385d8fb71512",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4",
+                "psr/container": "^1.0"
+            },
+            "provide": {
+                "psr/container-implementation": "^1.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.8"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "DevOp\\Core\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "DevOp Studio",
+                    "email": "core@devop-studio.com",
+                    "homepage": "https://devop-studio.com"
+                },
+                {
+                    "name": "Zlatin Hristov",
+                    "email": "about@z-latko.info",
+                    "homepage": "https://z-latko.info",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Dependency injection service",
+            "homepage": "https://devop-studio.com",
+            "keywords": [
+                "container",
+                "dependency-injection",
+                "php"
+            ],
+            "time": "2018-01-14T15:58:54+00:00"
+        },
+        {
+            "name": "devop-core/dotenv",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/devop-core/dotenv.git",
+                "reference": "ba90ad25ee4171f694976737b1643d61319da12f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/devop-core/dotenv/zipball/ba90ad25ee4171f694976737b1643d61319da12f",
+                "reference": "ba90ad25ee4171f694976737b1643d61319da12f",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.8"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "lib/functions.php"
+                ],
+                "psr-4": {
+                    "DevOp\\Core\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Zlatin Hristov",
+                    "email": "about@z-latko.info",
+                    "homepage": "https://z-latko.info",
+                    "role": "Developer"
+                },
+                {
+                    "name": "DevOp Studio",
+                    "email": "core@devop.studio",
+                    "homepage": "https://www.devop.studio"
+                }
+            ],
+            "description": "DotEnv librabry",
+            "homepage": "https://www.devop.studio",
+            "keywords": [
+                "dotenv",
+                "php"
+            ],
+            "time": "2018-06-15T20:02:25+00:00"
+        },
+        {
+            "name": "psr/container",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/container.git",
+                "reference": "2cc4a01788191489dc7459446ba832fa79a216a7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/container/zipball/2cc4a01788191489dc7459446ba832fa79a216a7",
+                "reference": "2cc4a01788191489dc7459446ba832fa79a216a7",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Container\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common Container Interface (PHP FIG PSR-11)",
+            "homepage": "https://github.com/php-fig/container",
+            "keywords": [
+                "PSR-11",
+                "container",
+                "container-interface",
+                "container-interop",
+                "psr"
+            ],
+            "time": "2017-06-28T15:35:32+00:00"
+        }
+    ],
     "packages-dev": [
         {
             "name": "doctrine/instantiator",
@@ -13,12 +226,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/instantiator.git",
-                "reference": "870a62d7b0d63d4e0ffa8f2ce3ab7c8a53d1846d"
+                "reference": "8788c31191242bca77a260b1d2c2621f18c9c1c3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/instantiator/zipball/870a62d7b0d63d4e0ffa8f2ce3ab7c8a53d1846d",
-                "reference": "870a62d7b0d63d4e0ffa8f2ce3ab7c8a53d1846d",
+                "url": "https://api.github.com/repos/doctrine/instantiator/zipball/8788c31191242bca77a260b1d2c2621f18c9c1c3",
+                "reference": "8788c31191242bca77a260b1d2c2621f18c9c1c3",
                 "shasum": ""
             },
             "require": {
@@ -55,12 +268,12 @@
                 }
             ],
             "description": "A small, lightweight utility to instantiate objects in PHP without invoking their constructors",
-            "homepage": "https://github.com/doctrine/instantiator",
+            "homepage": "https://www.doctrine-project.org/projects/instantiator.html",
             "keywords": [
                 "constructor",
                 "instantiate"
             ],
-            "time": "2018-03-05T09:41:42+00:00"
+            "time": "2018-09-05T19:40:54+00:00"
         },
         {
             "name": "phpdocumentor/reflection-common",
@@ -220,12 +433,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpspec/prophecy.git",
-                "reference": "6471ce6aa91ec03e9fdf3ca188e277104d8a7d1c"
+                "reference": "4ba436b55987b4bf311cb7c6ba82aa528aac0a06"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpspec/prophecy/zipball/6471ce6aa91ec03e9fdf3ca188e277104d8a7d1c",
-                "reference": "6471ce6aa91ec03e9fdf3ca188e277104d8a7d1c",
+                "url": "https://api.github.com/repos/phpspec/prophecy/zipball/4ba436b55987b4bf311cb7c6ba82aa528aac0a06",
+                "reference": "4ba436b55987b4bf311cb7c6ba82aa528aac0a06",
                 "shasum": ""
             },
             "require": {
@@ -242,7 +455,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.7.x-dev"
+                    "dev-master": "1.8.x-dev"
                 }
             },
             "autoload": {
@@ -275,7 +488,7 @@
                 "spy",
                 "stub"
             ],
-            "time": "2018-05-09T14:00:54+00:00"
+            "time": "2018-08-05T17:53:17+00:00"
         },
         {
             "name": "phpunit/php-code-coverage",
@@ -1031,12 +1244,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-ctype.git",
-                "reference": "9d31bef82d2e9b033f335d60b96611757f98c605"
+                "reference": "e3d826245268269cd66f8326bd8bc066687b4a19"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-ctype/zipball/9d31bef82d2e9b033f335d60b96611757f98c605",
-                "reference": "9d31bef82d2e9b033f335d60b96611757f98c605",
+                "url": "https://api.github.com/repos/symfony/polyfill-ctype/zipball/e3d826245268269cd66f8326bd8bc066687b4a19",
+                "reference": "e3d826245268269cd66f8326bd8bc066687b4a19",
                 "shasum": ""
             },
             "require": {
@@ -1048,7 +1261,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.8-dev"
+                    "dev-master": "1.9-dev"
                 }
             },
             "autoload": {
@@ -1081,7 +1294,7 @@
                 "polyfill",
                 "portable"
             ],
-            "time": "2018-05-17T18:32:56+00:00"
+            "time": "2018-08-06T14:22:27+00:00"
         },
         {
             "name": "symfony/yaml",
@@ -1089,12 +1302,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
-                "reference": "c5010cc1692ce1fa328b1fb666961eb3d4a85bb0"
+                "reference": "84fa64edb72e90a5421391f0c5206b4c90788750"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/c5010cc1692ce1fa328b1fb666961eb3d4a85bb0",
-                "reference": "c5010cc1692ce1fa328b1fb666961eb3d4a85bb0",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/84fa64edb72e90a5421391f0c5206b4c90788750",
+                "reference": "84fa64edb72e90a5421391f0c5206b4c90788750",
                 "shasum": ""
             },
             "require": {
@@ -1140,7 +1353,7 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
-            "time": "2018-05-03T23:18:14+00:00"
+            "time": "2018-09-02T17:11:59+00:00"
         },
         {
             "name": "webmozart/assert",
