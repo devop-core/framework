@@ -7,17 +7,17 @@ use DevOp\Core\Framework\Controller;
 class Application
 {
     /**
-     * @var self
-     */
-    private static $instance;
-
-    /**
      * @var Container
      */
     private $container;
 
     /**
-     * @return self
+     * @return $this
+     */
+    private static $instance;
+
+    /**
+     * @return $this
      */
     public static function make()
     {
@@ -27,6 +27,10 @@ class Application
         return self::$instance;
     }
 
+    /**
+     * 
+     * @return $this
+     */
     public function configure()
     {
         $this->container = new Container();

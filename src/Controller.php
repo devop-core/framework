@@ -3,7 +3,7 @@ namespace DevOp\Core\Framework;
 
 use Psr\Container\ContainerInterface;
 
-class Controller
+abstract class Controller
 {
     /**
      * @var ContainerInterface
