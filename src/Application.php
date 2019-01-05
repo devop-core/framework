@@ -6,6 +6,7 @@ use DevOp\Core\Framework\Controller;
 
 class Application
 {
+
     /**
      * @var Container
      */
@@ -37,8 +38,7 @@ class Application
 
         $this->container->add('debug', env('APP_DEBUG'));
 
-        $this->container->add(Controller::class,
-            function() {
+        $this->container->add(Controller::class, function() {
             return new Controller($this->container);
         });
 
