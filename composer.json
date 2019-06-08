@@ -1,7 +1,7 @@
 {
     "name": "devop-core/framework",
     "description": "DevOp Framework",
-    "keywords": ["php", "devop", "framework"],
+    "keywords": ["php", "devop", "studio", "framework"],
     "homepage": "https://www.devop.studio",
     "type": "library",
     "license": "MIT",
@@ -20,17 +20,20 @@
     ],
     "minimum-stability": "stable",
     "require": {
-        "php": ">=5.4",
-        "devop-core/config": "~1.0",
-        "devop-core/dotenv": "~1.0",
-        "devop-core/container": "~1.0"
+        "php": ">=7.0",
+        "devop-core/http": "^1.0",
+        "devop-core/dotenv": "^1.0",
+        "devop-core/config": "^1.0",
+        "devop-core/router": "^1.0",
+        "devop-core/container": "^1.0"
     },
     "require-dev": {
-        "phpunit/phpunit": "^4.8"
+        "phpunit/phpunit": "^6"
     },
     "autoload": {
         "psr-4": {
-            "DevOp\\Core\\Framework\\": "src"
+            "DevOp\\Core\\Framework\\": "src",
+            "Example\\App\\": ".example/src"
         }
     },
     "autoload-dev": {

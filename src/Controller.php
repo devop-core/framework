@@ -5,6 +5,7 @@ use Psr\Container\ContainerInterface;
 
 final class Controller
 {
+
     /**
      * @var ContainerInterface
      */

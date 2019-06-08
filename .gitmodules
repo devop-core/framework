@@ -1,0 +1,15 @@
+[submodule "vendor/devop-core/config"]
+	path = vendor/devop-core/config
+	url = https://github.com/devop-core/config.git
+[submodule "vendor/devop-core/http"]
+	path = vendor/devop-core/http
+	url = https://github.com/devop-core/http.git
+[submodule "vendor/devop-core/dotenv"]
+	path = vendor/devop-core/dotenv
+	url = https://github.com/devop-core/dotenv.git
+[submodule "vendor/devop-core/router"]
+	path = vendor/devop-core/router
+	url = https://github.com/devop-core/router.git
+[submodule "vendor/devop-core/container"]
+	path = vendor/devop-core/container
+	url = https://github.com/devop-core/container.git
